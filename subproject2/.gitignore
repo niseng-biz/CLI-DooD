@@ -1,0 +1,8 @@
+# Ignore all .env files in the project
+**/.env
+
+# Ignore Node.js dependencies
+**/node_modules
+
+# Ignore project memory files
+**/memory.md

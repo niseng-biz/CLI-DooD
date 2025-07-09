@@ -1,0 +1,19 @@
+{
+	"name": "Subproject2 Python",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.pylint",
+				"ms-python.flake8",
+				"ms-python.black-formatter",
+				"ms-vscode.vscode-json",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	}
+}

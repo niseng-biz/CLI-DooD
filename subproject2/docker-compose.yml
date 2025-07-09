@@ -1,0 +1,14 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # env_file:
+    #   - .env
+    volumes:
+      # このプロジェクトのディレクトリをコンテナ内のワークスペースにマウント
+      - ${PRJ2_PATH:-.}:/workspace/subproject2:cached
+    working_dir: /workspace/subproject2
+    # コンテナを起動し続けるためのコマンド
+    command: sleep infinity

@@ -1,0 +1,20 @@
+services:
+  # メインの開発コンテナ。Gemini CLIを配置し、ここから他のコンテナを操作する。
+  main:
+    build:
+      context: ..
+      dockerfile: main/Dockerfile
+
+    env_file:
+      - .env
+      
+    # VS Codeがこのコンテナにアタッチされる
+    volumes:
+      - ${CURRENT_PATH}:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+         
+    # nodeユーザーでDocker操作を可能にする
+    user: node
+
+    # sleepコマンドでコンテナを常に起動状態に保つ
+    command: sleep infinity

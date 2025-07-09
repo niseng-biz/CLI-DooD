@@ -1,0 +1,42 @@
+{
+  "model_config": {
+    "model": "gemini-2.5-pro-latest",
+    // "model": "gemini-1.5-pro-latest",
+    // "model": "gemini-2.5-pro-preview-05-06",
+    "temperature": 0.4,
+    "max_output_tokens": 8192
+  },
+
+  "startup_files": [
+    "main/instructions.md",
+    "main/memory.md"
+  ],
+  
+  "tool_config": {
+    "code_execution": {
+      "enabled": true
+    }
+  },
+
+  "mcpServers": {
+
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+
+
+    "server-memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {}
+    }
+
+  }
+
+}
