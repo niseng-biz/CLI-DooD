@@ -28,7 +28,7 @@ memory.mdに書き込むタイミングもバラバラなので「これまで�
 
 ### ステップ1: リポジトリのクローン
 ```bash
-git clone <repository-url>
+git clone https://github.com/niseng-biz/CLI-DooD.git
 cd cli-dev-container-project
 ```
 
