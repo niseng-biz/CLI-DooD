@@ -1,4 +1,4 @@
-# CLI Dev Container Project
+# CLI DooD (Docker outside of Docker)
 
 ## 1. 概要
 
